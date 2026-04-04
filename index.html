@@ -5,11 +5,12 @@ Meu primeiro projeto no GitHub
 <head>
   <meta charset="UTF-8">
   <title>Meu Portfólio</title>
+
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: #f0f4f8;
+      background: #f4f6f8;
       color: #333;
       text-align: center;
       padding: 50px;
@@ -30,7 +31,7 @@ Meu primeiro projeto no GitHub
 
     p {
       font-size: 18px;
-      color: #555;
+      color: #555555;
       max-width: 600px;
       margin: 10px auto 20px auto;
     }
@@ -51,41 +52,53 @@ Meu primeiro projeto no GitHub
       background-color: #2980b9;
     }
 
+    a {
+      color: #e67e22;
+      text-decoration: none;
+    }
+
     footer {
       margin-top: 40px;
       font-size: 14px;
-      color: #888;
-    }
-
-    a {
-      color: #3498db;
-      text-decoration: none;
+      color: #888888;
     }
   </style>
 </head>
+
 <body>
 
-  <!-- Foto de perfil -->
-  <img src="https://via.placeholder.com/150" alt="Minha Foto" class="avatar">
+  <!-- Avatar -->
+  <img src="https://via.placeholder.com/150" alt="Foto" class="avatar">
 
-  <!-- Apresentação -->
+  <!-- Nome -->
   <h1>Olá, eu sou [Agta] 👋</h1>
-  <p>Este é meu primeiro projeto no GitHub. Aqui você pode conhecer um pouco sobre mim e meus contatos.</p>
 
-  <!-- Botões de ação -->
+  <!-- Descrição -->
+  <p>
+    Este é meu primeiro projeto no GitHub 🚀<br>
+    Estou construindo meus primeiros projetos.
+  </p>
+
+  <!-- Botão interativo -->
   <button class="button" onclick="mostrarMensagem()">Clique aqui</button>
   <p id="mensagem"></p>
 
-  <button class="button" onclick="window.location.href='https://www.linkedin.com/'">Meu www.linkedin.com/in/agta-silva>
-  <button class="button" onclick="window.location.href='https://github.com/'">Meu GitHub<agtavice-cloud/index.html>
+  <!-- Links -->
+  <button class="button" onclick="window.location.href='https://www.linkedin.com/in/agta-silva'">
+    Meu LinkedIn
+  </button>
+
+  <button class="button" onclick="window.location.href='https://github.com/agtavice-cloud'">
+    Meu GitHub
+  </button>
 
   <footer>
-    &copy; 2026 [SEU NOME]. Todos os direitos reservados.
+    © 2026 [SEU NOME] • Meu primeiro site
   </footer>
 
   <script>
     function mostrarMensagem() {
-      document.getElementById("mensagem").innerText = "Você clicou no botão! 🎉";
+      document.getElementById("mensagem").innerText = "Obrigado por visitar meu site! 🎉";
     }
   </script>
 
