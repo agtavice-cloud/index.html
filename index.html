@@ -6,29 +6,43 @@
 
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', Tahoma, sans-serif;
       background: #f4f6f8;
       color: #333;
-      text-align: center;
+      text-align: left;
       padding: 50px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 5px;
+      font-size: 36px;
     }
 
     h2 {
       color: #2c3e50;
       margin-top: 40px;
-    }
-
-    h1 {
-      color: #2c3e50;
-      margin-bottom: 10px;
+      font-size: 26px;
     }
 
     p {
       font-size: 18px;
       color: #555555;
-      max-width: 600px;
-      margin: 10px auto 20px auto;
+      margin: 10px 0 20px 0;
+      line-height: 1.6;
+    }
+
+    .cargo {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 25px;
     }
 
     .button {
@@ -37,9 +51,9 @@
       border: none;
       padding: 12px 25px;
       font-size: 16px;
-      border-radius: 5px;
+      border-radius: 6px;
       cursor: pointer;
-      margin: 5px;
+      margin: 5px 10px 5px 0;
       transition: 0.3s;
     }
 
@@ -47,13 +61,8 @@
       background-color: #2980b9;
     }
 
-    a {
-      color: #e67e22;
-      text-decoration: none;
-    }
-
     footer {
-      margin-top: 40px;
+      margin-top: 50px;
       font-size: 14px;
       color: #888888;
     }
@@ -61,53 +70,53 @@
 </head>
 
 <body>
+  <div class="container">
 
-  <!-- Nome -->
-  <h1>Agta Silva
-     Analista de Dados | Power BI | SQL | Python  
-  </h1>
+    <!-- Nome -->
+    <h1>Agta Silva</h1>
+    <p class="cargo">Analista de Dados | Power BI | SQL | Python</p>
 
-  <!-- Descrição -->
-  <p>
-    Este é meu primeiro projeto no GitHub <br>
-    Estou construindo meus primeiros projetos.
-  </p>
+    <!-- Descrição -->
+    <p>
+      Este é meu primeiro projeto no GitHub.<br>
+      Estou construindo meus primeiros projetos.
+    </p>
 
-  <!-- Sobre mim -->
-  <h2>Sobre mim</h2>
-  <p>
-    
-   Sou estudante de Engenharia da Computação com foco em Análise de Dados, utilizando Python, SQL e Power BI para transformar dados em informações estratégicas. 
-   Tenho experiência com automação de processos, construção de dashboards e organização de indicadores para suporte à tomada de decisão.
-   Atualmente atuo como Analista de Dados voluntária no Observatório Social do Brasil, contribuindo com análise de dados públicos, transparência e governança. 
-   Busco oportunidades para atuar como estagiária ou júnior em Dados, Projetos ou Tecnologia. 
-    
-    
-  </p>
+    <!-- Sobre mim -->
+    <h2>Sobre mim</h2>
+    <p>
+      Sou estudante de Engenharia da Computação com foco em Análise de Dados, utilizando Python, SQL e Power BI para transformar dados em informações estratégicas.
+      Tenho experiência com automação de processos, construção de dashboards e organização de indicadores para suporte à tomada de decisão.
+      Atualmente atuo como Analista de Dados voluntária no Observatório Social do Brasil, contribuindo com análise de dados públicos, transparência e governança.
+      Busco oportunidades para atuar como estagiária ou júnior em Dados, Projetos ou Tecnologia.
+    </p>
 
-  <!-- Botão interativo -->
-  <button class="button" onclick="mostrarMensagem()">Clique aqui</button>
-  <p id="mensagem"></p>
+    <!-- Botão interativo -->
+    <button class="button" onclick="mostrarMensagem()">Clique aqui</button>
+    <p id="mensagem"></p>
 
-  <!-- Habilidades -->
-  <h2>Habilidades</h2>
-  <p>
-    Python • SQL • Power BI • AWS • Excel<br>
-    Análise de Dados • Automação • Projetos de TI 
-  </p>
+    <!-- Habilidades -->
+    <h2>Habilidades</h2>
+    <p>
+      Python • SQL • Power BI • AWS • Excel<br>
+      Análise de Dados • Automação • Projetos de TI
+    </p>
 
-  <!-- Links -->
-  <button class="button" onclick="window.location.href='https://www.linkedin.com/in/agta-silva'">
-    Meu LinkedIn
-  </button>
+    <!-- Links -->
+    <button class="button" onclick="window.location.href='https://www.linkedin.com/in/agta-silva'">
+      Meu LinkedIn
+    </button>
 
-  <button class="button" onclick="window.location.href='https://github.com/agtavice-cloud'">
-    Meu GitHub
-  </button>
+    <button class="button" onclick="window.location.href='https://github.com/agtavice-cloud'">
+      Meu GitHub
+    </button>
 
-  <footer>
-    © 2026 Agta • Meu primeiro site
-  </footer>
+    <!-- Rodapé -->
+    <footer>
+      © 2026 Agta • Meu primeiro site
+    </footer>
+
+  </div>
 
   <script>
     function mostrarMensagem() {
